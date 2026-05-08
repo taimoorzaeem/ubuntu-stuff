@@ -1,12 +1,20 @@
+# By default, the config file has tabs, so I will stick to that.
+# With vim, do ":set noexpandtab" before editing the file
 [user]
 	name = Taimoor Zaeem
 	email = taimoorzaeem@gmail.com
 	signingkey = # signing key for verified commits
 [core]
+	autocrlf = input
 	editor = vim
 [diff]
+	algorithm = histogram
 	colorMoved = dimmed-zebra
 	colorMovedWS = ignore-white-space
+[fetch]
+	prune = true
+[alias]
+	cp = cherry-pick
 [credential]
 	helper = store
 [commit]
